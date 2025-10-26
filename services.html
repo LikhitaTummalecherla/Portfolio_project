@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Student | Full Stack Developer</title>
+    <meta name="description" content="Professional web development, DevOps, and consulting services by Alex Johnson.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/public/favicon.svg">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="/src/styles.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="preloader-content">
+            <div class="preloader-logo">
+                <div class="logo-text">RL</div>
+                <div class="logo-animation"></div>
+            </div>
+            <div class="preloader-text">Loading Services...</div>
+            <div class="preloader-progress">
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="/" class="logo-link">
+                    <span class="logo-text">RL</span>
+                    <span class="logo-subtitle">Developer</span>
+                </a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="/" class="nav-link">
+                    <span>Home</span>
+                    <div class="nav-indicator"></div>
+                </a>
+                <a href="/about.html" class="nav-link">
+                    <span>About</span>
+                    <div class="nav-indicator"></div>
+                </a>
+                <a href="/services.html" class="nav-link active">
+                    <span>Services</span>
+                    <div class="nav-indicator"></div>
+                </a>
+                <a href="/portfolio.html" class="nav-link">
+                    <span>Portfolio</span>
+                    <div class="nav-indicator"></div>
+                </a>
+                <a href="/experience.html" class="nav-link">
+                    <span>Experience</span>
+                    <div class="nav-indicator"></div>
+                </a>
+                <a href="/contact.html" class="nav-link">
+                    <span>Contact</span>
+                    <div class="nav-indicator"></div>
+                </a>
+            </div>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="header-content" data-aos="fade-up">
+                <div class="breadcrumb">
+                    <a href="/">Home</a>
+                    <span class="separator">/</span>
+                    <span class="current">Services</span>
+                </div>
+                <h1 class="page-title">My Services</h1>
+                <p class="page-description">
+                    Comprehensive solutions for your digital needs
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="container">
+            <div class="services-grid">
+                <div class="service-card featured" data-aos="fade-up" data-aos-delay="100">
+                    <div class="featured-badge">Popular</div>
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="service-title">Full Stack Development</h3>
+                    <p class="service-description">
+                        Complete web application development from frontend to backend, 
+                        including database design, API development, and user interface creation.
+                    </p>
+                    <div class="service-features">
+                        <span class="feature-tag">React/Vue.js</span>
+                        <span class="feature-tag">Node.js</span>
+                        <span class="feature-tag">Database Design</span>
+                        <span class="feature-tag">API Development</span>
+                        <span class="feature-tag">Responsive Design</span>
+                    </div>
+                    <div class="service-cta">
+                        <a href="/contact.html" class="service-link">
+                            Get Started <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fab fa-docker"></i>
+                    </div>
+                    <h3 class="service-title">DevOps & Cloud Solutions</h3>
+                    <p class="service-description">
+                        Streamline your development workflow with CI/CD pipelines, 
+                        containerization, and cloud infrastructure management.
+                    </p>
+                    <div class="service-features">
+                        <span class="feature-tag">Docker</span>
+                        <span class="feature-tag">Kubernetes</span>
+                        <span class="feature-tag">AWS/Azure</span>
+                        <span class="feature-tag">CI/CD</span>
+                        <span class="feature-tag">Monitoring</span>
+                    </div>
+                    <div class="service-cta">
+                        <a href="/contact.html" class="service-link">
+                            Learn More <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="service-title">Mobile App Development</h3>
+                    <p class="service-description">
+                        Cross-platform mobile applications using React Native and Flutter, 
+                        delivering native performance with shared codebase.
+                    </p>
+                    <div class="service-features">
+                        <span class="feature-tag">React Native</span>
+                        <span class="feature-tag">Flutter</span>
+                        <span class="feature-tag">iOS/Android</span>
+                        <span class="feature-tag">App Store</span>
+                        <span class="feature-tag">Push Notifications</span>
+                    </div>
+                    <div class="service-cta">
+                        <a href="/contact.html" class="service-link">
+                            Discuss Project <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="service-title">Performance Optimization</h3>
+                    <p class="service-description">
+                        Improve your application's speed, SEO, and user experience through 
+                        comprehensive performance audits and optimization strategies.
+                    </p>
+                    <div class="service-features">
+                        <span class="feature-tag">Speed Optimization</span>
+                        <span class="feature-tag">SEO</span>
+                        <span class="feature-tag">Core Web Vitals</span>
+                        <span class="feature-tag">Lighthouse</span>
+                        <span class="feature-tag">Analytics</span>
+                    </div>
+                    <div class="service-cta">
+                        <a href="/contact.html" class="service-link">
+                            Optimize Now <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="service-title">Technical Consulting</h3>
+                    <p class="service-description">
+                        Strategic technology guidance, architecture reviews, and team mentoring 
+                        to help your organization make informed technical decisions.
+                    </p>
+                    <div class="service-features">
+                        <span class="feature-tag">Architecture Review</span>
+                        <span class="feature-tag">Team Training</span>
+                        <span class="feature-tag">Code Review</span>
+                        <span class="feature-tag">Best Practices</span>
+                        <span class="feature-tag">Strategy</span>
+                    </div>
+                    <div class="service-cta">
+                        <a href="/contact.html" class="service-link">
+                            Schedule Call <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="service-title">Security & Maintenance</h3>
+                    <p class="service-description">
+                        Ongoing security audits, updates, and maintenance to keep your 
+                        applications secure, up-to-date, and running smoothly.
+                    </p>
+                    <div class="service-features">
+                        <span class="feature-tag">Security Audits</span>
+                        <span class="feature-tag">Updates</span>
+                        <span class="feature-tag">Monitoring</span>
+                        <span class="feature-tag">Backup</span>
+                        <span class="feature-tag">Support</span>
+                    </div>
+                    <div class="service-cta">
+                        <a href="/contact.html" class="service-link">
+                            Secure App <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">How I Work</span>
+                <h2 class="section-title">My Development Process</h2>
+                <p class="section-description">
+                    A proven methodology that ensures quality results and client satisfaction
+                </p>
+            </div>
+
+            <div class="process-steps">
+                <div class="process-step" data-aos="fade-up" data-aos-delay="100">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Discovery & Planning</h3>
+                        <p>Understanding your requirements, goals, and constraints to create a comprehensive project plan.</p>
+                    </div>
+                </div>
+
+                <div class="process-step" data-aos="fade-up" data-aos-delay="200">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Design & Architecture</h3>
+                        <p>Creating wireframes, mockups, and technical architecture that aligns with your vision.</p>
+                    </div>
+                </div>
+
+                <div class="process-step" data-aos="fade-up" data-aos-delay="300">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Development & Testing</h3>
+                        <p>Building your solution with clean code, regular testing, and continuous integration.</p>
+                    </div>
+                </div>
+
+                <div class="process-step" data-aos="fade-up" data-aos-delay="400">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3>Deployment & Support</h3>
+                        <p>Launching your project and providing ongoing support and maintenance as needed.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2>Ready to Start Your Project?</h2>
+                <p>Let's discuss how I can help bring your ideas to life with cutting-edge technology and best practices.</p>
+                <div class="cta-actions">
+                    <a href="/contact.html" class="btn btn-primary btn-lg">Get Started Today</a>
+                    <a href="/portfolio.html" class="btn btn-outline btn-lg">View My Work</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-text">Student</span>
+                        <span class="logo-subtitle">Full Stack Developer</span>
+                    </div>
+                    <p class="footer-description">
+                        Passionate about creating innovative solutions and building amazing digital experiences.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://github.com" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="mailto:alex@example.com" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/about.html">About</a></li>
+                            <li><a href="/services.html">Services</a></li>
+                            <li><a href="/portfolio.html">Portfolio</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="/services.html">Web Development</a></li>
+                            <li><a href="/services.html">DevOps</a></li>
+                            <li><a href="/services.html">Consulting</a></li>
+                            <li><a href="/services.html">Support</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><a href="/contact.html">Get in Touch</a></li>
+                            <li><a href="/experience.html">Experience</a></li>
+                            <li><a href="mailto:alex@example.com">Email</a></li>
+                            <li><a href="tel:+1234567890">Phone</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2025 RL Developers. All rights reserved.</p>
+                </div>
+                <div class="footer-credits">
+                    <p>Made with <i class="fas fa-heart"></i> using modern web technologies</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>

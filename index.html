@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student - Full Stack Developer</title>
+    <meta name="description" content="Full Stack Developer specializing in modern web technologies, DevOps, and cloud solutions.">
+    <meta name="keywords" content="Full Stack Developer, DevOps, React, Node.js, Docker, Jenkins">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Student Portfolio - Full Stack Developer">
+    <meta property="og:description" content="Full Stack Developer specializing in modern web technologies, DevOps, and cloud solutions.">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/public/favicon.svg">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="/src/styles.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="preloader-content">
+            <div class="preloader-logo">
+                <div class="logo-text">RL</div>
+                <div class="logo-animation"></div>
+            </div>
+            <div class="preloader-text">Loading Portfolio...</div>
+            <div class="preloader-progress">
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <!-- Particles Background -->
+    <div id="particles" class="particles-container"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="/" class="logo-link">
+                    <span class="logo-text">RL</span>
+                    <span class="logo-subtitle">Developer</span>
+                </a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="/" class="nav-link active">
+                    <span>Home</span>
+                    <div class="nav-indicator"></div>
+                </a>
+                <a href="/about.html" class="nav-link">
+                    <span>About</span>
+                    <div class="nav-indicator"></div>
+                </a>
+                <a href="/services.html" class="nav-link">
+                    <span>Services</span>
+                    <div class="nav-indicator"></div>
+                </a>
+                <a href="/portfolio.html" class="nav-link">
+                    <span>Portfolio</span>
+                    <div class="nav-indicator"></div>
+                </a>
+                <a href="/experience.html" class="nav-link">
+                    <span>Experience</span>
+                    <div class="nav-indicator"></div>
+                </a>
+                <a href="/contact.html" class="nav-link">
+                    <span>Contact</span>
+                    <div class="nav-indicator"></div>
+                </a>
+            </div>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="hero-gradient"></div>
+            <div class="hero-particles"></div>
+            <div class="hero-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
+        
+        <div class="hero-container">
+            <div class="hero-content" data-aos="fade-up">
+                <div class="hero-badge">
+                    <div class="badge-icon">👋</div>
+                    <span class="badge-text">Welcome to my portfolio</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    <span class="title-line">Hi, I'm</span>
+                    <span class="title-line">
+                        <span class="title-highlight">Student Portfolio</span>
+                    </span>
+                </h1>
+                
+                <div class="hero-subtitle">
+                    <span class="subtitle-prefix">I'm a</span>
+                    <span class="typed-text" id="typed-text"></span>
+                    <span class="cursor-blink">|</span>
+                </div>
+                
+                <p class="hero-description">
+                    Passionate Full Stack Developer with expertise in modern web technologies, 
+                    DevOps practices, and cloud solutions. I build scalable applications that 
+                    make a difference and help businesses grow.
+                </p>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Years</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">20+</span>
+                        <span class="stat-label">Clients</span>
+                    </div>
+                </div>
+                
+                <div class="hero-actions">
+                    <a href="/portfolio.html" class="btn btn-primary">View My Work</a>
+                    <a href="/contact.html" class="btn btn-outline">Get In Touch</a>
+                </div>
+                
+                <div class="hero-social">
+                    <a href="https://github.com" target="_blank" class="social-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                        <div class="social-tooltip">GitHub</div>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                        <div class="social-tooltip">LinkedIn</div>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="social-link" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                        <div class="social-tooltip">Twitter</div>
+                    </a>
+                    <a href="mailto:alex@example.com" class="social-link" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                        <div class="social-tooltip">Email</div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-visual" data-aos="fade-left" data-aos-delay="200">
+                <div class="hero-image-container">
+                    <div class="image-frame">
+                        <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Student" class="hero-image">
+                       
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="floating-cards">
+                        <div class="floating-card card-1">
+                            <div class="card-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-title">Clean Code</div>
+                                <div class="card-subtitle">Best Practices</div>
+                            </div>
+                        </div>
+                        
+                        <div class="floating-card card-2">
+                            <div class="card-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-title">Fast Delivery</div>
+                                <div class="card-subtitle">On Time</div>
+                            </div>
+                        </div>
+                        
+                        <div class="floating-card card-3">
+                            <div class="card-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-title">Secure</div>
+                                <div class="card-subtitle">& Reliable</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="status-indicator">
+                        <div class="status-dot"></div>
+                        <span class="status-text">Available for work</span>
+                    </div>
+                
+        
+        <div class="scroll-indicator">
+            <div class="scroll-text">Scroll Down</div>
+            <div class="scroll-arrow">
+                <div class="arrow-line"></div>
+                <div class="arrow-head"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick About Section -->
+    <section class="quick-about">
+        <div class="container">
+            <div class="quick-about-content" data-aos="fade-up">
+                <div class="quick-about-text">
+                    <h2>Building Digital Solutions That Matter</h2>
+                    <p>
+                        With over 5 years of experience in full-stack development and DevOps, 
+                        I help businesses transform their ideas into powerful digital solutions. 
+                        From concept to deployment, I ensure every project delivers exceptional value.
+                    </p>
+                    <a href="/about.html" class="btn btn-primary">Learn More About Me</a>
+                </div>
+                <div class="quick-about-features">
+                    <div class="feature-item">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>Full Stack Development</h3>
+                        <p>End-to-end web application development</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fab fa-docker"></i>
+                        <h3>DevOps & Cloud</h3>
+                        <p>Scalable infrastructure and deployment</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>Mobile Development</h3>
+                        <p>Cross-platform mobile applications</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Services -->
+    <section class="featured-services">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">What I Do</span>
+                <h2 class="section-title">Featured Services</h2>
+                <p class="section-description">
+                    Comprehensive solutions for your digital needs
+                </p>
+            </div>
+            
+            <div class="services-preview">
+                <div class="service-preview-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Modern, responsive websites and web applications built with the latest technologies.</p>
+                    <a href="/services.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-preview-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fab fa-docker"></i>
+                    </div>
+                    <h3>DevOps Solutions</h3>
+                    <p>Streamlined deployment pipelines and cloud infrastructure management.</p>
+                    <a href="/services.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-preview-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Technical Consulting</h3>
+                    <p>Strategic guidance and architecture reviews to optimize your technology stack.</p>
+                    <a href="/services.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="featured-projects">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Recent Work</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-description">
+                    A selection of my recent projects and achievements
+                </p>
+            </div>
+            
+            <div class="projects-preview">
+                <div class="project-preview-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=600" alt="E-commerce Platform">
+                    </div>
+                    <div class="project-content">
+                        <h3>E-commerce Platform</h3>
+                        <p>Full-stack solution with React, Node.js, and Stripe integration</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-preview-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=600" alt="DevOps Dashboard">
+                    </div>
+                    <div class="project-content">
+                        <h3>DevOps Dashboard</h3>
+                        <p>Real-time monitoring and deployment tracking system</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Docker</span>
+                            <span>Jenkins</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-preview-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Task Management App">
+                    </div>
+                    <div class="project-content">
+                        <h3>Task Management App</h3>
+                        <p>Collaborative platform with real-time updates and team features</p>
+                        <div class="project-tech">
+                            <span>Vue.js</span>
+                            <span>Socket.io</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="projects-cta" data-aos="fade-up">
+                <a href="/portfolio.html" class="btn btn-primary btn-lg">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2>Ready to Start Your Next Project?</h2>
+                <p>Let's work together to bring your ideas to life with cutting-edge technology and best practices.</p>
+                <div class="cta-actions">
+                    <a href="/contact.html" class="btn btn-primary btn-lg">Get Started Today</a>
+                    <a href="/about.html" class="btn btn-outline btn-lg">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-text">Student</span>
+                        <span class="logo-subtitle">Full Stack Developer</span>
+                    </div>
+                    <p class="footer-description">
+                        Passionate about creating innovative solutions and building amazing digital experiences.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://github.com" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="mailto:student@example.com" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/about.html">About</a></li>
+                            <li><a href="/services.html">Services</a></li>
+                            <li><a href="/portfolio.html">Portfolio</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="/services.html">Web Development</a></li>
+                            <li><a href="/services.html">DevOps</a></li>
+                            <li><a href="/services.html">Consulting</a></li>
+                            <li><a href="/services.html">Support</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><a href="/contact.html">Get in Touch</a></li>
+                            <li><a href="/experience.html">Experience</a></li>
+                            <li><a href="mailto:alex@example.com">Email</a></li>
+                            <li><a href="tel:+1234567890">Phone</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2025 RL Developers. All rights reserved.</p>
+                </div>
+                <div class="footer-credits">
+                    <p>Made with <i class="fas fa-heart"></i> using modern web technologies</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!--  Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>

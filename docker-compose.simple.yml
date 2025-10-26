@@ -1,0 +1,9 @@
+services:
+  portfolio:
+    build:
+      context: .
+      dockerfile: Dockerfile.simple
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/usr/local/apache2/htdocs/

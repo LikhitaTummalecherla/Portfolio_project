@@ -1,0 +1,9 @@
+# Use a publicly available image that doesn't require auth
+FROM httpd:alpine
+
+# Copy your website files
+COPY index.html /usr/local/apache2/htdocs/
+COPY src/ /usr/local/apache2/htdocs/src/
+COPY public/ /usr/local/apache2/htdocs/public/
+
+EXPOSE 80

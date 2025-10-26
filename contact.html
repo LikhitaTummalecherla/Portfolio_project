@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Student | Full Stack Developer</title>
+    <meta name="description" content="Get in touch with Alex Johnson for web development projects, consulting, or collaboration opportunities.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/public/favicon.svg">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="/src/styles.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="preloader-content">
+            <div class="preloader-logo">
+                <div class="logo-text">RL</div>
+                <div class="logo-animation"></div>
+            </div>
+            <div class="preloader-text">Loading Contact...</div>
+            <div class="preloader-progress">
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="/" class="logo-link">
+                    <span class="logo-text">RL</span>
+                    <span class="logo-subtitle">Developer</span>
+                </a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="/" class="nav-link">
+                    <span>Home</span>
+                    <div class="nav-indicator"></div>
+                </a>
+                <a href="/about.html" class="nav-link">
+                    <span>About</span>
+                    <div class="nav-indicator"></div>
+                </a>
+                <a href="/services.html" class="nav-link">
+                    <span>Services</span>
+                    <div class="nav-indicator"></div>
+                </a>
+                <a href="/portfolio.html" class="nav-link">
+                    <span>Portfolio</span>
+                    <div class="nav-indicator"></div>
+                </a>
+                <a href="/experience.html" class="nav-link">
+                    <span>Experience</span>
+                    <div class="nav-indicator"></div>
+                </a>
+                <a href="/contact.html" class="nav-link active">
+                    <span>Contact</span>
+                    <div class="nav-indicator"></div>
+                </a>
+            </div>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="header-content" data-aos="fade-up">
+                <div class="breadcrumb">
+                    <a href="/">Home</a>
+                    <span class="separator">/</span>
+                    <span class="current">Contact</span>
+                </div>
+                <h1 class="page-title">Get In Touch</h1>
+                <p class="page-description">
+                    Let's discuss your project and bring your ideas to life
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-intro">
+                        <h3>Let's Work Together</h3>
+                        <p>
+                            I'm always interested in new opportunities and exciting projects. 
+                            Whether you have a question, want to discuss a project, or just want to say hi, 
+                            feel free to reach out! I'll get back to you as soon as possible.
+                        </p>
+                    </div>
+
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-content">
+                                <h4>Email</h4>
+                                <p>Student@example.com</p>
+                                <span class="method-note">Best for detailed project discussions</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="method-content">
+                                <h4>Phone</h4>
+                                <p>+91 234 963-4567</p>
+                                <span class="method-note">Available Mon-Fri, 9AM-6PM PST</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="method-content">
+                                <h4>Location</h4>
+                                <p>San Francisco, CA</p>
+                                <span class="method-note">Open to remote work worldwide</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-calendar"></i>
+                            </div>
+                            <div class="method-content">
+                                <h4>Schedule a Call</h4>
+                                <p>Book a free consultation</p>
+                                <span class="method-note">30-minute discovery call</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-social">
+                        <h4>Connect on Social Media</h4>
+                        <div class="social-links">
+                            <a href="https://github.com" target="_blank" class="social-link">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://linkedin.com" target="_blank" class="social-link">
+                                <i class="fab fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="https://twitter.com" target="_blank" class="social-link">
+                                <i class="fab fa-twitter"></i>
+                                <span>Twitter</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container" data-aos="fade-left">
+                    <div class="form-header">
+                        <h3>Send Me a Message</h3>
+                        <p>Fill out the form below and I'll get back to you within 24 hours.</p>
+                    </div>
+
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company">Company/Organization</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="projectType">Project Type</label>
+                            <select id="projectType" name="projectType">
+                                <option value="">Select a project type</option>
+                                <option value="web-development">Web Development</option>
+                                <option value="mobile-app">Mobile App Development</option>
+                                <option value="devops">DevOps & Cloud Solutions</option>
+                                <option value="consulting">Technical Consulting</option>
+                                <option value="maintenance">Maintenance & Support</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="budget">Project Budget</label>
+                            <select id="budget" name="budget">
+                                <option value="">Select budget range</option>
+                                <option value="under-5k">Under $5,000</option>
+                                <option value="5k-15k">$5,000 - $15,000</option>
+                                <option value="15k-50k">$15,000 - $50,000</option>
+                                <option value="50k-plus">$50,000+</option>
+                                <option value="discuss">Let's discuss</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="timeline">Project Timeline</label>
+                            <select id="timeline" name="timeline">
+                                <option value="">Select timeline</option>
+                                <option value="asap">ASAP</option>
+                                <option value="1-month">Within 1 month</option>
+                                <option value="2-3-months">2-3 months</option>
+                                <option value="3-6-months">3-6 months</option>
+                                <option value="6-months-plus">6+ months</option>
+                                <option value="flexible">Flexible</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Project Details *</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Tell me about your project, goals, and any specific requirements..." required></textarea>
+                        </div>
+
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="newsletter" value="yes">
+                                <span>Subscribe to my newsletter for web development tips and updates</span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full btn-lg">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+
+                        <div class="form-note">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Your information is secure and will never be shared with third parties.</span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">FAQ</span>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-description">
+                    Common questions about working with me and my development process
+                </p>
+            </div>
+
+            <div class="faq-grid">
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                    <h3>What's your typical project timeline?</h3>
+                    <p>Project timelines vary based on complexity and scope. A simple website might take 2-4 weeks, while a complex web application could take 2-6 months. I'll provide a detailed timeline during our initial consultation.</p>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Do you work with international clients?</h3>
+                    <p>Absolutely! I work with clients worldwide and am comfortable with remote collaboration. I'm flexible with time zones and use modern communication tools to ensure smooth project management.</p>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                    <h3>What technologies do you specialize in?</h3>
+                    <p>I specialize in React, Node.js, TypeScript, and modern web technologies. For DevOps, I work with Docker, Kubernetes, AWS, and CI/CD pipelines. I choose the best technology stack for each project's specific needs.</p>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+                    <h3>Do you provide ongoing support and maintenance?</h3>
+                    <p>Yes, I offer comprehensive support and maintenance packages. This includes security updates, performance monitoring, bug fixes, and feature enhancements to keep your application running smoothly.</p>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="500">
+                    <h3>How do you handle project communication?</h3>
+                    <p>I believe in transparent communication throughout the project. I provide regular updates, use project management tools, and schedule weekly check-ins to ensure we're aligned on progress and any changes.</p>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="600">
+                    <h3>What's included in your development process?</h3>
+                    <p>My process includes discovery and planning, design and architecture, development with regular testing, deployment, and post-launch support. I also provide documentation and training as needed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-text">Student</span>
+                        <span class="logo-subtitle">Full Stack Developer</span>
+                    </div>
+                    <p class="footer-description">
+                        Passionate about creating innovative solutions and building amazing digital experiences.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://github.com" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="mailto:alex@example.com" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/about.html">About</a></li>
+                            <li><a href="/services.html">Services</a></li>
+                            <li><a href="/portfolio.html">Portfolio</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="/services.html">Web Development</a></li>
+                            <li><a href="/services.html">DevOps</a></li>
+                            <li><a href="/services.html">Consulting</a></li>
+                            <li><a href="/services.html">Support</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><a href="/contact.html">Get in Touch</a></li>
+                            <li><a href="/experience.html">Experience</a></li>
+                            <li><a href="mailto:alex@example.com">Email</a></li>
+                            <li><a href="tel:+1234567890">Phone</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2025 RL Developers. All rights reserved.</p>
+                </div>
+                <div class="footer-credits">
+                    <p>Made with <i class="fas fa-heart"></i> using modern web technologies</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>
